@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rainbow.kitchen.MainActivity">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"
+        android:layout_above="@+id/mHomeRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:id="@+id/mHomeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/recipe"
+            android:textColor="@color/colorAccent"
+            android:drawableTop="@drawable/foods_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/fun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/fun"
+            android:textColor="@color/colorAccent"
+            android:drawableTop="@drawable/fun_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/community"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/community"
+            android:textColor="@color/colorAccent"
+            android:drawableTop="@drawable/community_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/mine"
+            android:textColor="@color/colorAccent"
+            android:drawableTop="@drawable/me_selector"
+            android:checked="true"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/mHomeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mHomeRadioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+</RelativeLayout>

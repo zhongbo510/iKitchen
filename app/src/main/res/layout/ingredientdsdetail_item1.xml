@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:id="@+id/image_vg_ingredientsdetail"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:background="@color/colorbase1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/ingredients_details"
+            android:text="各种介绍"
+            />
+
+</LinearLayout>

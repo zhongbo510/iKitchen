@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/tuijian02_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_card_recommend"/>
+        <TextView
+            android:id="@+id/tuijian02_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选作品"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tuijian02_iv"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tuijian02_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

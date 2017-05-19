@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/detalis03_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/detalis03_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detalis03_tv"
+        android:src="@mipmap/ic_card_like_n"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:id="@+id/detalis03_iv2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/arrow"
+        android:layout_marginRight="16dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detalis03_rv"
+        android:layout_below="@id/detalis03_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+</RelativeLayout>

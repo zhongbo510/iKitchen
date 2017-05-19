@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:background="@color/colorbase1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/ingredients_details"
+            android:text="各种介绍"
+            />
+
+</LinearLayout>

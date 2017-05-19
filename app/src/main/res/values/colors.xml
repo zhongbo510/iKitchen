@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ded4d4</color>
+    <color name="colorbase">#ccc</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF000000</color>
+    <color name="white" >@android:color/background_light</color>
+    <color name="black" >@android:color/background_dark</color>
+    <color name="zbcolorPrimary1">#3F51B5</color>
+    <color name="zbcolorPrimaryDark1">#303F9F</color>
+    <color name="zbcolorAccent1">#FF4081</color>
+    <color name="colorbase1">#FFECE8E8</color>
+    <color name="colorPrimary1">#FFEAEAEA</color>
+</resources>

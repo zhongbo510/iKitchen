@@ -177,8 +177,8 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.MyVi
                             TextView tv = (TextView) layout1.findViewById(R.id.textView33);
                             Glide.with(context)
                                     .load(data.get(i).getContent())
-                                    .placeholder(R.mipmap.ic_launcher)
-                                    .error(R.mipmap.food)
+                                    .placeholder(R.mipmap.ic_talent)
+                                   // .error(R.mipmap.food)
                                     .skipMemoryCache(true)
                                     .into(imageView);
 

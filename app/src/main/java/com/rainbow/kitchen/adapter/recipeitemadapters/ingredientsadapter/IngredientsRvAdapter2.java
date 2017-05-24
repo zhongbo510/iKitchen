@@ -11,14 +11,6 @@ import com.bumptech.glide.Glide;
 import com.rainbow.kitchen.R;
 import com.rainbow.kitchen.bean.IngredientsDetailBean;
 
-/**
- * Created by innershows on 2016/12/1.
- *
- * @author innershows
- * @date 2016/12/1
- * @e_mail innershow@gmail.com
- */
-
 public class IngredientsRvAdapter2 extends RecyclerView.Adapter<IngredientsRvAdapter2.MyViewHolder> {
     IngredientsDetailBean.DataBean data;
     Context context;
@@ -47,9 +39,9 @@ public class IngredientsRvAdapter2 extends RecyclerView.Adapter<IngredientsRvAda
             holder.tv_name.setText(data.getEffect());
             Glide.with(context)
                     .load(data.getEffect_image())
-                    .placeholder(R.mipmap.ic_launcher)
-                    .error(R.mipmap.food)
-                    .skipMemoryCache(true)
+                    .placeholder(R.mipmap.ic_talent)
+                    //.error(R.mipmap.food)
+                   .skipMemoryCache(true)
                     .into(holder.imageView);
         }
     }

@@ -33,7 +33,7 @@
                 android:id="@+id/sc_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@mipmap/sxms" />
+                 />
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:clipToPadding="true"

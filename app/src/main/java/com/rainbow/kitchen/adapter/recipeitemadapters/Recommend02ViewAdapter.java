@@ -15,9 +15,6 @@ import com.rainbow.kitchen.utils.DisplayUtils;
 
 import java.util.List;
 
-/**
- * Created by BlueSky on 17/1/4.
- */
 
 public class Recommend02ViewAdapter extends RecyclerView.Adapter<Recommend02ViewAdapter.MyViewHolder> {
     List<Recommend.DataBean.WidgetListBean.WidgetDataBean> data;
@@ -44,8 +41,8 @@ public class Recommend02ViewAdapter extends RecyclerView.Adapter<Recommend02View
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         Glide.with(context)
                 .load(data.get(position).getContent())
-                .placeholder(R.mipmap.ic_launcher)
-                .error(R.mipmap.food)
+                .placeholder(R.mipmap.ic_talent)
+               // .error(R.mipmap.food)
                 .override(DisplayUtils.getScreenWidth(context)/2,200)
                 .skipMemoryCache(true)
                 .into(holder.imageView);
@@ -69,6 +66,7 @@ public class Recommend02ViewAdapter extends RecyclerView.Adapter<Recommend02View
         public MyViewHolder(View itemView) {
             super(itemView);
             imageView= (ImageView) itemView;
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
         }
     }
 }

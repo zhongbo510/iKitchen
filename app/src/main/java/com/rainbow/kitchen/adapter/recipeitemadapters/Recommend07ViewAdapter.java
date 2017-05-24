@@ -17,9 +17,6 @@ import com.rainbow.kitchen.bean.Recommend;
 
 import java.util.List;
 
-/**
- * Created by BlueSky on 17/1/4.
- */
 
 public class Recommend07ViewAdapter extends RecyclerView.Adapter<Recommend07ViewAdapter.MyViewHolder> {
     List<Recommend.DataBean.WidgetListBean.WidgetDataBean> data;
@@ -50,8 +47,8 @@ public class Recommend07ViewAdapter extends RecyclerView.Adapter<Recommend07View
             Log.e("====","====="+data.get(position*3).getContent());
             Glide.with(context)
                     .load(data.get(position*3).getContent())
-                    .placeholder(R.mipmap.sxm)
-                    .error(R.mipmap.food)
+                    .placeholder(R.mipmap.ic_talent)
+                   // .error(R.mipmap.food)
                     .skipMemoryCache(true)
                     .into(holder.circleImageView);
 

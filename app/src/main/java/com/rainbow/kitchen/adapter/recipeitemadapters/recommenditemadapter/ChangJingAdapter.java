@@ -14,9 +14,6 @@ import com.rainbow.kitchen.utils.BitmapUtils;
 
 import java.util.List;
 
-/**
- * Created by followlove on 2017/1/10:22:41.
- */
 
 public class ChangJingAdapter extends RecyclerView.Adapter<ChangJingAdapter.MyViewHolder>{
     Context context;

@@ -59,8 +59,8 @@ public class IngredientsAdapter extends RecyclerView.Adapter<IngredientsAdapter.
         String  img1 = dataBeanXList.get(position).getImage();
         Glide.with(context)
                 .load(img1)
-                .placeholder(R.mipmap.ic_launcher)
-                .error(R.mipmap.food)
+                .placeholder(R.mipmap.ic_talent)
+             //   .error(R.mipmap.food)
                 .skipMemoryCache(true)
                 .into(holder.imageView1);
         List<Ingredients.DataBeanXX.DataBeanX.DataBean> data =

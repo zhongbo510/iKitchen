@@ -12,13 +12,6 @@ import com.bumptech.glide.Glide;
 import com.rainbow.kitchen.R;
 import com.rainbow.kitchen.bean.IngredientsDetailBean;
 
-/**
- * Created by innershows on 2016/12/1.
- *
- * @author innershows
- * @date 2016/12/1
- * @e_mail innershow@gmail.com
- */
 
 public class IngredientsRvAdapter extends RecyclerView.Adapter<IngredientsRvAdapter.MyViewHolder> {
 
@@ -49,7 +42,7 @@ public class IngredientsRvAdapter extends RecyclerView.Adapter<IngredientsRvAdap
                       Glide.with(context)
                               .load(data.getPick_image())
                               .placeholder(R.mipmap.ic_launcher)
-                              .error(R.mipmap.food)
+                             // .error(R.mipmap.food)
                               .skipMemoryCache(true)
                               .into(holder.imageView);
 

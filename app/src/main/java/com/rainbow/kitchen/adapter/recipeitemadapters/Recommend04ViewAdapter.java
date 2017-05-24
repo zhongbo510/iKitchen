@@ -18,9 +18,6 @@ import com.rainbow.kitchen.utils.GlideCircleTransform;
 
 import java.util.List;
 
-/**
- * Created by BlueSky on 17/1/4.
- */
 
 public class Recommend04ViewAdapter extends RecyclerView.Adapter<Recommend04ViewAdapter.MyViewHolder> {
     List<Recommend.DataBean.WidgetListBean.WidgetDataBean> data;
@@ -54,8 +51,8 @@ public class Recommend04ViewAdapter extends RecyclerView.Adapter<Recommend04View
             Log.e("====","====="+data.get(position*4).getContent());
             Glide.with(context)
                     .load(data.get(position*4).getContent())
-                    .placeholder(R.mipmap.sxms)
-                    .error(R.mipmap.food)
+                    .placeholder(R.mipmap.ic_talent)
+                  //  .error(R.mipmap.food)
                     .transform(new GlideCircleTransform(context))
                     .skipMemoryCache(true)
                     .into(holder.circleImageView);

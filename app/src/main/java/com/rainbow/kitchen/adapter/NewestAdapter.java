@@ -14,9 +14,7 @@ import com.rainbow.kitchen.bean.CommunityNewest;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/12/27.
- */
+
 
 public class NewestAdapter extends RecyclerView.Adapter<NewestAdapter.MyViewHolder> {
     private Context context;
@@ -39,7 +37,7 @@ public class NewestAdapter extends RecyclerView.Adapter<NewestAdapter.MyViewHold
         if(dataBean.getImage()!=null){
             Glide.with(context)
                     .load(dataBean.getImage())
-                    .placeholder(R.mipmap.ic_launcher)
+                    .placeholder(R.mipmap.ic_talent)
                     .skipMemoryCache(true)
                     .into(holder.img);
         }

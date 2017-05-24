@@ -137,11 +137,12 @@ public class Recommendfragment extends Fragment implements SwipeRefreshLayout.On
         for (int i = 0; i < pager.size(); i++) {
             //加载原图
             ImageView img = new ImageView(getActivity());
-            img.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            img.setScaleType(ImageView.ScaleType.FIT_CENTER
+            );
             Glide.with(getActivity())
                     .load(pager.get(i).getBanner_picture())
                     .centerCrop()
-                    .placeholder(R.mipmap.sxms)
+                    .placeholder(R.mipmap.ic_talent)
                     .into(img);
             views.add(img);
 

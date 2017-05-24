@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/12/26.
- */
 
 public class CommunityAdapter extends FragmentStatePagerAdapter{
     private List<String> titles;

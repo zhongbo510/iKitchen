@@ -41,8 +41,8 @@ public class Recyclerview11adapter extends RecyclerView.Adapter<Recyclerview11ad
         if (logosBeanList!=null){
             Glide.with(context)
                     .load(logosBeanList.get(position).getLogo())
-                    .placeholder(R.mipmap.ic_launcher)
-                    .error(R.mipmap.ic_launcher)
+                    .placeholder(R.mipmap.ic_talent)
+                    //.error(R.mipmap.ic_launcher)
                     .transform(new GlideCircleTransform(context))
                     .skipMemoryCache(true)
                     .into(holder.imageView15);

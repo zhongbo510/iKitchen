@@ -49,8 +49,8 @@ public class IngredientsRvAdapter3 extends RecyclerView.Adapter<IngredientsRvAda
             holder.tv_name.setText(data.getApplied());
             Glide.with(context)
                     .load(data.getApplied_image())
-                    .placeholder(R.mipmap.ic_launcher)
-                    .error(R.mipmap.food)
+                    .placeholder(R.mipmap.ic_talent)
+                  //  .error(R.mipmap.food)
                     .skipMemoryCache(true)
                     .into(holder.imageView);
         }

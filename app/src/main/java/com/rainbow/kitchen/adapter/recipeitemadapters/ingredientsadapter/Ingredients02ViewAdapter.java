@@ -13,9 +13,6 @@ import com.rainbow.kitchen.bean.Ingredients;
 
 import java.util.List;
 
-/**
- * Created by BlueSky on 17/1/4.
- */
 
 public class Ingredients02ViewAdapter extends RecyclerView.Adapter<Ingredients02ViewAdapter.MyViewHolder> {
     List<Ingredients.DataBeanXX.DataBeanX.DataBean> data;

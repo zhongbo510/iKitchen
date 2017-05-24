@@ -13,9 +13,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * Created by BlueSky on 17/1/4.
- */
 
 public class BitmapUtils {
 
@@ -56,8 +53,8 @@ public class BitmapUtils {
     public static void  showImageToUser(Context context,String url, ImageView imageView) {
         Glide.with(context)
                 .load(url)
-                .placeholder(R.mipmap.sxm)
-                .error(R.mipmap.food)
+                .placeholder(R.mipmap.ic_talent)
+              //  .error(R.mipmap.food)
                 .skipMemoryCache(true)
                 .into(imageView);
     }
@@ -65,8 +62,8 @@ public class BitmapUtils {
         Glide.with(context)
                 .load(url)
                 .transform(new GlideCircleTransform(context))
-                .placeholder(R.mipmap.sxm)
-                .error(R.mipmap.food)
+                .placeholder(R.mipmap.ic_talent)
+                //.error(R.mipmap.food)
                 .skipMemoryCache(true)
                 .into(imageView);
     }

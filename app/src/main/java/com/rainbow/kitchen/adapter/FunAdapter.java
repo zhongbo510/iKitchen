@@ -16,9 +16,6 @@ import com.rainbow.kitchen.callback.OnFunItemClickListener;
 
 import java.util.List;
 
-/**
- * Created by tsngtso on 2016/12/26.
- */
 
 public class FunAdapter extends RecyclerView.Adapter<FunAdapter.MyViewHolder>{
     private  Context context;
@@ -51,7 +48,7 @@ public class FunAdapter extends RecyclerView.Adapter<FunAdapter.MyViewHolder>{
         if(dataBean.getImage()!=null){
             Glide.with(context)
                     .load(dataBean.getImage())
-                    .placeholder(R.mipmap.food)
+                    .placeholder(R.mipmap.ic_talent)
                     .skipMemoryCache(true)
                     .into(holder.img);
         }

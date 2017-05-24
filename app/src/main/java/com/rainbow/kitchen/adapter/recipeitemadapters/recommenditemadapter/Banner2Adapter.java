@@ -16,8 +16,8 @@ import com.rainbow.kitchen.utils.BitmapUtils;
 
 import java.util.List;
 
-/**
- * Created by followlove on 2017/1/9:21:19.
+/*
+
  */
 
 public class Banner2Adapter extends RecyclerView.Adapter<Banner2Adapter.MyViewHolder>{
